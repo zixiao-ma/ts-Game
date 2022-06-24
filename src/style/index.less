@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bgc{
+  width: 300px;
+  height: 300px;
+  background: url("../style/over.jpg") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.dis{
+  cursor: not-allowed;
+}
+#box{
+  width: 1002px;
+  height: 302px;
+  border: 1px solid #ddd;
+  margin: 100px auto 10px;
+  position: relative;
+  overflow: hidden;
+  .score{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+  }
+
+  .person{
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    z-index: 99;
+    //233
+    transition: all 0s ease;
+    width: 40px;
+    height: 67px;
+    background: url("./personpng.gif") no-repeat;
+    background-size: 100% 100%;
+  }
+  .transition{
+    transition: all .5s ease;
+  }
+  .move_box{
+    width: 40px;
+    position: absolute;
+    right: -40px;
+    bottom: 0px;
+    border: 1px solid;
+    transition: all .3s linear;
+    background: url("../style/q.png") repeat-y;
+    background-size: 100% auto;
+  }
+}
